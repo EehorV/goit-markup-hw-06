@@ -162,6 +162,56 @@ header {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+/* Секция подписки в футере */
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+  position: relative;
+  top: 12px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+.subscribe-input {
+  margin-right: 12px;
+  width: 358px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-button {
+  font-family: inherit;
+  font-style: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.subscribe-icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
 /* Ссылки на соцсети разработчиков*/
 .hero-heading {
   font-size: 44px;
