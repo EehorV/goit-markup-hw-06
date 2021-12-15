@@ -669,7 +669,7 @@ address {
   top: 50%;
   left: 50%;
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -686,6 +686,7 @@ address {
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -712,6 +713,9 @@ address {
   position: relative;
   display: block;
   margin-bottom: 10px;
+}
+.input-wrap {
+  position: relative;
 }
 .modal-label {
   display: block;
@@ -741,8 +745,9 @@ address {
   width: 18px;
   height: 18px;
   color: var(--secondary-text-color);
-  fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-50%);
+  /* fill: currentColor; */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea {
   height: 120px;
@@ -765,7 +770,7 @@ address {
 }
 .modal-input:focus + .modal-icon,
 .modal-input:not(:placeholder-shown) + .modal-icon {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* -----Чекбокс на соглашение */
 .accept-item {
@@ -777,11 +782,11 @@ address {
 .accept-checkbox {
   position: relative;
   margin-right: 7px;
-  width: 16px;
+  width: 15px;
   height: 15px;
-  border: 2px solid var(--secondary-text-color);
+  border: 2px solid var(--primary-text-color);
   border-radius: 2px;
-  color: var(--hero-text-color);
+  /* color: var(--hero-text-color); */
   pointer-events: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -833,5 +838,11 @@ address {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-accept-button:hover,
+.modal-accept-button:focus {
+  background-color: #188ce8;
+  border: none;
+  cursor: pointer;
 }
 /* ------End of modal window styles */
